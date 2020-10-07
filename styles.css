@@ -1,3 +1,6 @@
+body, html {
+    overflow-x: hidden;
+}
 .home {
     height: 900px;
     background-image: url(bg_hero_1.svg);
@@ -14,14 +17,7 @@
     max-height: 500px;
      min-width: 170px;
 }
-.navbar-floating {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-   padding-top: 20px;
-   padding-bottom: 50px;
-  }
+
  #btn-nav {
      padding-right: 15px;
      padding-left: 15px;
@@ -32,7 +28,8 @@
     color: white;
     border-radius: 20px;
 }
-#btn-nav:hover {
+#btn-nav:hover,
+#btn__submit:hover {
     box-shadow: 0 4px 16px 1px darkblue;
 }
 #fa1 {
@@ -86,5 +83,33 @@
      box-shadow: 0px 6px 10px 3px black;
 }
 .pricing-head {
-    margin-left: -10%; padding-top: 42%;
+    margin-left: 0%; padding-top: 42%;
+}
+.customer__service {
+    color: white;
+    
+    background-image: linear-gradient(to right,  rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)) , url(bg_testimonials.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#btn__customer {
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+#btn__submit {
+    background-color: rgb(25, 25, 179);
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+}
+.footer {
+    color: white;
+    background-color: #383340;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
